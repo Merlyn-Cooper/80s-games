@@ -75,7 +75,7 @@
 610  IF E%=0 THEN PRINTTAB(E%, F%); "    "; TAB(E%, F%+1); TAB(E%, F%+2); "    ":E%=36
 620  ENDPROC
 630  DEFPROCBRM
-640  COLOUR 1 : PRINTTAB(S%,T%); " " ; F$; TAB(S%, T%+1); " "; G$; TAB(S%, T%+2); "  "; H$ : S%=S%+1
+640  COLOUR 1 : PRINTTAB(S%,T%); " " ; F$; TAB(S%, T%+1); " "; G$; TAB(S%, T%+2); " "; H$ : S%=S%+1
 650  IF S%=36 THEN PRINTTAB(S%, T%); "    "; TAB(S%,T%+1); " "; TAB(S%,T%+2); " " : S%=0
 660  COLOUR 3 : ENDPROC
 670  DEFPROCFIRE

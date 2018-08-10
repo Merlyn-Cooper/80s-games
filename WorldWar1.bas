@@ -153,7 +153,7 @@
 1350 PRINTTAB(14, 3); "__________" : COLOUR 3
 1360 PRINTTAB(8, 6); "In this game you are a ship at the bottom of the screen being shot at by enemy fire. There are biplanes, hot air balloons and airships shooting and you must blow them up before they blow you up."
 1365 PRINTTAB(9, 12); "The higher up the enemy is the more points you get."
-1370 COLOUR 1 : PRINTTAB(8, 16); "USE THE FOLLOWING KEYS" : COLOUR 2 : PRINTTAB(16, 20); "Z=LEFT"; TAB(16, 22); "X=RIGHT"; TAB(14, 24); "SHIFT=FIRE" : COLOUR 1
+1370 COLOUR 1 : PRINTTAB(8, 16); "USE THE FOLLOWING KEYS" : COLOUR 2 : PRINTTAB(16, 20); "Z=LEFT"; TAB(16, 22); "X=RIGHT"; TAB(14, 24); "RETURN=FIRE" : COLOUR 1
 1380 PRINTTAB(7, 29); "PRESS SPACE BAR TO START"
 1390 PRINTTAB(7, 30); "________________________"
 1400 IF INKEY(-99)THEN ENDPROC ELSE GOTO 1510

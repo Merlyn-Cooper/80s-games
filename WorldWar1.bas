@@ -1,5 +1,5 @@
 5    *KEY10 OLD¦M RUN ¦M
-10   MODE 4 : VDU 23; 8202;0;0;0;:VDU 19, 0, 4, 0, 0, 0:HI%=300
+10   MODE 9 : VDU 23; 8202;0;0;0;:VDU 19, 0, 4, 0, 0, 0:HI%=300
 15   ENVELOPE 1, 131, 0, 0, 0, 0, 0, 0, 126, -3, 0, 0, 126, 0:PROCIN
 20   VDU 23, 224, 255, 8, 31, 63, 63, 30, 76, 63, 23, 225, 128, 0, 197, 254, 133, 0, 128, 0, 23, 226, 1, 0, 163, 127, 162, 0, 1, 0, 23, 227, 255, 16, 248, 252, 252, 120, 50, 252, 23, 236, 72, 1, 148, 1, 19, 134, 16, 66,
 25   VDU 23, 237, 65, 8, 34, 144, 192, 137, 32, 130,
@@ -52,7 +52,9 @@
 390  IF G%=34 THEN PRINTTAB(G%, 28); "    " : G%=1
 400  IF G%=0 THEN PRINTTAB(G%, 28); "    " : G%=34
 410  IF INKEY(-26)THEN G%=G%-1
+411  REM Left arrow
 415  IF INKEY(-122)THEN G%=G%+1
+416  REM Right arrow
 420  ENDPROC
 430  DEFPROCZLM
 440  COLOUR 1 : PRINTTAB(C%, D%); D$; " "; TAB(C%, D%+1); E$; " ":C%=C%-1
@@ -153,7 +155,7 @@
 1350 PRINTTAB(14, 3); "__________" : COLOUR 3
 1360 PRINTTAB(8, 6); "In this game you are a ship at the bottom of the screen being shot at by enemy fire. There are biplanes, hot air balloons and airships shooting and you must blow them up before they blow you up."
 1365 PRINTTAB(9, 12); "The higher up the enemy is the more points you get."
-1370 COLOUR 1 : PRINTTAB(8, 16); "USE THE FOLLOWING KEYS" : COLOUR 2 : PRINTTAB(16, 20); "Z=LEFT"; TAB(16, 22); "X=RIGHT"; TAB(14, 24); "RETURN=FIRE" : COLOUR 1
+                                                                                      1370 COLOUR 1 : PRINTTAB(8, 16); "USE THE FOLLOWING KEYS" : COLOUR 2 : PRINTTAB(16, 20); "LEFTARROW =LEFT"; TAB(16, 22); "RIGHTARROW=RIGHT"; TAB(14, 24); "RETURN=FIRE" : COLOUR 1
 1380 PRINTTAB(7, 29); "PRESS SPACE BAR TO START"
 1390 PRINTTAB(7, 30); "________________________"
 1400 IF INKEY(-99)THEN ENDPROC ELSE GOTO 1510
